@@ -18,8 +18,8 @@ app.post('/send-message', function (req, res) {
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'rohan.pratap15@gmail.com',
-            pass: 'sgexbwmxrryovgzt',
+            user: 'heliocenture@gmail.com',
+            pass: 'uiiujodomujschwt',
         }
     });
 
@@ -41,7 +41,7 @@ app.post('/send-message', function (req, res) {
 
     var mailOptions = {
         from: name,
-        to: 'rohan.pratap15@gmail.com',
+        to: 'heliocenture@gmail.com',
         subject: 'New Enquiry',
         text: `Name: ${name}
         Phone number: ${phone}
@@ -53,17 +53,17 @@ app.post('/send-message', function (req, res) {
     transporter.sendMail(mailOptions, function(error) {
         if (error) {
             console.log(error);
-            res.send("Error sending your details!");
+            res.send("<h1>Error sending your details!</h1>");
         } else {
             console.log("Details sent!");
-            res.send("Your details have been sent!");
+            res.send("<h1>Your details have been sent!</h1>");
         }
     })
 
     if (res.statusCode === 200) {
-        res.send("Your details have been sent! :)");
+        res.send("<h1>Your details have been sent!<h1>");
     } else {
-        res.send("There was an error. Please try again!");
+        res.send("<h1>There was an error. Please try again!</h1>");
     }
 });
 
