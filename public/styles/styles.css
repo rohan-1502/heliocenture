@@ -76,7 +76,7 @@ a {
     list-style-type: none;
 }
 
-.ham-open {
+#sidebar {
     display: none;
 }
 
