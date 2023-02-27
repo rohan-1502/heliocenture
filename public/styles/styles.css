@@ -98,6 +98,7 @@ a {
     min-height: 100vh;
     min-width: 100%;
     margin-top: 0.2rem;
+    z-index: -1;
 }
 
 .container {
@@ -637,7 +638,7 @@ footer {
     .hamburger {
         display: block;
         position: relative;
-        z-index: 1;
+        z-index: 111111111;
         user-select: none;
         appearance: none;
         border: none;
@@ -654,7 +655,7 @@ footer {
         position: relative;
         background-color: #000000;
         border-radius: 6px;
-        z-index: 1;
+        z-index: 111111111;
         transform-origin: 0 0;
         transition: 0.4s;
     }
@@ -685,6 +686,11 @@ footer {
         min-height: 100vh;
         max-width: 250px;
         padding: 3rem 2rem;
+        z-index: 11111111111;
+    }
+
+    .ham-open::before,
+    .ham-open::after {
         z-index: 11111;
     }
 
