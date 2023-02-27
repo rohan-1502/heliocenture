@@ -20,3 +20,9 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
+const hamburger = document.querySelector('.hamburger');
+const mobNavOpen = document.querySelector('#sidebar');
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('is-active');
+    mobNavOpen.classList.toggle('ham-open');
+});
