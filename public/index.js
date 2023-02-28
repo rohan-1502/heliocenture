@@ -26,3 +26,7 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('is-active');
     mobNavOpen.classList.toggle('ham-open');
 });
+
+VirtualSelect.init({ 
+    ele: '#service-multiselect' 
+  });

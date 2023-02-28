@@ -61,7 +61,7 @@ app.post('/send-message', function (req, res) {
     })
 
     if (res.statusCode === 200) {
-        res.send("<h1>Your details have been sent!<h1>");
+        res.send("<h1>Our team will reach you shortly. Have a great day!<h1>");
     } else {
         res.send("<h1>There was an error. Please try again!</h1>");
     }

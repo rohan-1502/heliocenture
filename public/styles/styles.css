@@ -110,7 +110,7 @@ a {
 
 .content-home {
     max-width: 60%;
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
 
 .content-home-header {
@@ -164,14 +164,22 @@ a {
     margin:2rem 3rem 0;
 }
 
-.contact-form input,
-.contact-form select {
+.contact-form input {
     margin-bottom: 2rem;
     border: 0;
     border-radius: 10px;
     font-size: 1.2rem;
     outline: 0;
     padding: 1rem 0 1rem 2rem;
+}
+
+.contact-form select {
+    margin-bottom: 2rem;
+    border: 0;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    outline: 0;
+    padding: 1rem 0 1rem 26px;
 }
 
 .contact-form button {
@@ -455,6 +463,12 @@ a {
     scale: 80%;
 }
 
+.mayyarcasa .case-logo img {
+    height: 125%;
+    width: 125%;
+    object-fit: cover;
+}
+
 #testimonials {
     background-color: #fff;
     min-height: 100vh;
@@ -631,6 +645,10 @@ footer {
 
 @media screen and (max-width: 800px)  {
 
+    body {
+        overflow-x: hidden;
+    }
+
     .navbar .nav-links {
         display: none;
     }
@@ -723,6 +741,11 @@ footer {
 
 div.ham-open ul{
     display: block;
+}
+
+.list-item {
+    gap: 1.5rem;
+    text-align: left;
 }
 
 .services-item {

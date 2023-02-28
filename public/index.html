@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/virtual-select.min.css">
     <script defer src="./index.js"></script>
+    <script defer src="./virtual-select.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/df2aba7b66.js" crossorigin="anonymous"></script>
     <title>Heliocenture</title>
@@ -85,14 +87,14 @@
                 </div>
             
            
-                <div class="contact">
+                <div id="contact" class="contact">
                     <h3>Boost your company's growth with strategic Digital Marketing</h3>
                     <h1>reach out to us</h1>
                     <form action="/send-message" method="post" class="contact-form">
                         <input type="text" name="name" placeholder="Name" required>
                         <input type="text" name="phone" placeholder="Phone" required>
                         <input type="email" name="email" placeholder="Email" required>
-                        <select type="text" name="service" required>
+                        <select type="text" name="service" id="service-multi-select" required>
                             <option value="service required">Select service required</option>
                             <option value="google-ads">Google Ads</option>
                             <option value="FbIg-Marketing">Facebok and Instagram marketing</option>
@@ -103,11 +105,13 @@
                             <option value="all of the above">All of the above</option>
                         </select>
                         <select type="text" name="adbudget" required>
-                            <option value="ad-budget">Select Your Ad Budget per month</option>
-                            <option value="less than 50k">Less than 50,000</option>
-                            <option value="less than 1 lakh">Less than 1 Lakh</option>
-                            <option value="less than 1.5 lakhs">Less than 1.5 Lakhs</option>
-                            <option value="more than 2 lakhs">More than 2 Lakhs</option>
+                            <option value="ad-budget">Select Your Ad Budget</option>
+                            <option value="less than 50k">Up to 50,000/Month</option>
+                            <option value="less than 1 lakh">Up to 1 Lakh/Month</option>
+                            <option value="less than 1.5 lakhs">Up to 2 Lakhs/Month</option>
+                            <option value="more than 2 lakhs">Up to 3 Lakhs/Month</option>
+                            <option value="more than 2 lakhs">Up to 4 Lakhs/Month</option>
+                            <option value="more than 2 lakhs">More than 5 Lakhs/Month</option>
                         </select>
                         <button type="submit">Submit</button>
                     </form>
@@ -212,7 +216,7 @@
         <section id="cta">
             <div class="cta-container">
                 <h1>DO YOU WANT TO FUEL YOUR DIGITAL SUCCESS?</h1>
-                <a class="cta-btn" href="#home">Contact Us</a>
+                <a class="cta-btn" href="#contact">Contact Us</a>
             </div>
         </section>
         
@@ -270,9 +274,9 @@
                         <img src="./assets/hexa-logo.png" alt="">
                     </div>
                 </div>
-                <!-- <div class="mayyarcasa study-row">
+                <div class="mayyarcasa study-row">
                     <div class="case-logo">
-                        <img src="./assets/circle-logo.png" alt="">
+                        <img src="./assets/Meyyarcasa.jpg" alt="">
                     </div>
                     <div class="case-box hidden">
                         <h3>2000</h3>
@@ -287,7 +291,7 @@
                         <p>Decreased CPC</p>
                     </div>
                 </div>
-                <div class=" pmi-lasher study-row">
+                <!-- <div class=" pmi-lasher study-row">
                     <div class="case-box hidden">
                         <h3>1800+</h3>
                         <p>Leads Generated per month through PPC marketing</p>
@@ -301,7 +305,7 @@
                         <p>Increase in the conversion rate <br> in 15 days</p>
                     </div>
                     <div class="case-logo">
-                        <img src="./assets/Screenshot_20230222_032107.png" alt="">
+                        <img src="./assets/PMI-logo.cdr" alt="">
                     </div>
                 </div> -->
             </div>
@@ -437,7 +441,7 @@
         <section id="cta2">
             <div class="cta-container">
                 <h1>DO YOU WANT TO FUEL YOUR DIGITAL SUCCESS?</h1>
-                <a class="cta-btn" href="#home">Contact Us</a>
+                <a class="cta-btn" href="#contact">Contact Us</a>
             </div>
         </section>
 
@@ -450,19 +454,18 @@
                     <a href="">Privacy Notice</a>
                     <a href="">Terms & Conditions</a>
                 </div>
-                <div class="socials-links">
+                <!-- <div class="socials-links">
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                     <a href=""><i class="fa-brands fa-facebook"></i></a>
                     <a href=""><i class="fa-brands fa-youtube"></i></a>
                     <a href=""><i class="fa-brands fa-twitter"></i></a>
-                </div>
+                </div> -->
             </div>
             <div class="cprights">
                 <p><i class="fa-regular fa-copyright"></i> 2023 Heliocenture | All rights reserved</p>
             </div>
         </footer>
     </main>
-    
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </body>
 </html>
