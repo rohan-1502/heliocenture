@@ -98,7 +98,7 @@ a {
     min-height: 100vh;
     min-width: 100%;
     margin-top: 0.2rem;
-    display: flex;
+    z-index: -1;
 }
 
 .container {
@@ -505,7 +505,7 @@ a {
 /* .carousel-slide {
     /* position: absolute;
     top: 0;
-    bottom: 0; 
+    bottom: 0;
 } */
 
 .carousel-slide video {
@@ -695,39 +695,54 @@ footer {
         transform: translate(-3px, 3px) rotate(-45deg) ;
     }
 
-    #sidebar  {
-        display: block;
-    }
-
-    div.ham-open {
+    .ham-open {
         background-color: #fff;
-        height: 100vh;
-        min-width: 250px;
-        position: absolute;
-        top: 5rem;
-        right: 1rem;
-        z-index: 111111111;
+        display: block;
+        position: fixed;
+        top: 6rem;
+        right: 0;
+        min-height: 100vh;
+        max-width: 250px;
+        padding: 3rem 2rem;
+        z-index: 11111111111;
     }
 
-    div.ham-open ul {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
+    .ham-open::before,
+    .ham-open::after {
+        z-index: 11111;
+    }
+
+    .ham-open ul {
+        position: relative;
+        right: 30px;
         list-style: none;
+        text-align: center;
     }
 
-    div.ham-open ul a{
-        color: #080808;
-        text-decoration: none;
+    .ham-open ul li {
+        text-align: center;
         margin-bottom: 3rem;
     }
 
-    #home {
+    .ham-open ul li a {
+        margin: 0;
+        color: #1d1d1d;
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: ease-in-out 0.2s;
+    }
+
+     #home {
         overflow-x: hidden;
     }
 
  ul {
     display: none;
+}
+
+div.ham-open ul{
+    display: block;
 }
 
 .list-item {
