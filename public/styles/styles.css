@@ -49,6 +49,10 @@ a {
     font-family: "Mulish", sans-serif;
 }
 
+.hamburger {
+    display: none;
+}
+
 .navbar {
     box-shadow: 0px 12px 10px -15px #080808;
     display: flex;
@@ -59,25 +63,13 @@ a {
     transition: 0.3s ease-in-out;
 }
 
-.navbar:hover {
-    transform: scale(102%);
-}
-
 .navbar img {
     scale: 80%;
-}
-
-.hamburger {
-    display: none;
 }
 
 .navbar .nav-links {
     display: flex;
     list-style-type: none;
-}
-
-#sidebar {
-    display: none;
 }
 
 .navbar .nav-links a {
@@ -89,9 +81,9 @@ a {
     transition: ease-in-out 0.2s;
 }
 
-.navbar .nav-links a:hover {
+/* .navbar .nav-links a:hover {
     color: #565656;
-}
+} */
 
 #home {
     background-image: url(../assets/home-bg.png);
@@ -643,20 +635,16 @@ footer {
 }
 
 
-@media screen and (max-width: 800px)  {
+@media screen and (max-width: 35em)  {
 
     body {
         overflow-x: hidden;
     }
 
-    .navbar .nav-links {
-        display: none;
-    }
-
     .hamburger {
         display: block;
         position: relative;
-        z-index: 111111111;
+        z-index: 9999;
         user-select: none;
         appearance: none;
         border: none;
@@ -673,13 +661,9 @@ footer {
         position: relative;
         background-color: #000000;
         border-radius: 6px;
-        z-index: 111111111;
+        z-index: 9999;
         transform-origin: 0 0;
         transition: 0.4s;
-    }
-
-    .hamburger:hover span:nth-child(2) {
-        transform: translateX(10px);
     }
 
     .hamburger.is-active span:nth-child(1) {
@@ -695,42 +679,25 @@ footer {
         transform: translate(-3px, 3px) rotate(-45deg) ;
     }
 
-    .ham-open {
-        background-color: #fff;
-        display: block;
-        position: fixed;
-        top: 6rem;
-        right: 0;
-        min-height: 100vh;
-        max-width: 250px;
-        padding: 3rem 2rem;
-        z-index: 11111111111;
+    .navbar .nav-links {
+        position: fixed ;
+        inset: 10.5% 0 0 30%;
+        background-color: rgb(242, 242, 242);
+        color: #000;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem 2rem;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: ease-out 0.25s;
     }
 
-    .ham-open::before,
-    .ham-open::after {
-        z-index: 11111;
+    .navbar .nav-links[data-visible="true"] {
+        transform: translateX(0%);
     }
 
-    .ham-open ul {
-        position: relative;
-        right: 30px;
-        list-style: none;
-        text-align: center;
-    }
-
-    .ham-open ul li {
-        text-align: center;
-        margin-bottom: 3rem;
-    }
-
-    .ham-open ul li a {
+    .navbar .nav-links a {
         margin: 0;
-        color: #1d1d1d;
-        font-size: 18px;
-        font-weight: 700;
-        text-decoration: none;
-        transition: ease-in-out 0.2s;
     }
 
      #home {

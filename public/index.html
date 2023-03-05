@@ -25,27 +25,20 @@
         <nav>
             <div class="navbar">
                 <a href="#"><img src="./assets/helio-logo.png" alt="Heliocenture logo"></a>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Our Services</a></li>
-                    <li><a href="#case-studies">Portfolio</a></li>
-                    <li><a href="#about-us">About Us</a></li>
-                    <li><a href="#home">Contact Us</a></li>
-                </ul>
-                <button class="hamburger">
+
+                <button aria-controls="menu" aria-expanded="false" class="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <div id="sidebar">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Our Services</a></li>
-                        <li><a href="#case-studies">Portfolio</a></li>
-                        <li><a href="#about-us">About Us</a></li>
-                        <li><a href="#home">Contact Us</a></li>
-                    </ul>
-                </div>
+
+                <ul id="menu" data-visible="false" class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#case-studies">Portfolio</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
                 
             </div>
         </nav>
@@ -102,8 +95,8 @@
                         <input type="text" name="name" placeholder="Name" required>
                         <input type="text" name="phone" placeholder="Phone" required>
                         <input type="email" name="email" placeholder="Email" required>
-                        <select type="text" name="service" id="service-multi-select" multiple required>
-                            <option value="service required">Select service required</option>
+                        <select type="text" name="service" id="service-multi-select" required>
+                            <option value="">Select service required</option>
                             <option value="google-ads">Google Ads</option>
                             <option value="FbIg-Marketing">Facebok and Instagram marketing</option>
                             <option value="lead-generation">Lead Generation</option>
@@ -113,7 +106,7 @@
                             <option value="all of the above">All of the above</option>
                         </select>                          
                         <select type="text" name="adbudget" required>
-                            <option value="ad-budget">Select Your Ad Budget</option>
+                            <option value="">Select Your Ad Budget</option>
                             <option value="less than 50k">Up to 50,000/Month</option>
                             <option value="less than 1 lakh">Up to 1 Lakh/Month</option>
                             <option value="less than 1.5 lakhs">Up to 2 Lakhs/Month</option>

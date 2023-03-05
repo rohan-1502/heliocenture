@@ -21,12 +21,22 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 const hamburger = document.querySelector('.hamburger');
-const mobNavOpen = document.querySelector('#sidebar');
+const mobNavOpen = document.querySelector('.nav-links');
 hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('is-active');
-    mobNavOpen.classList.toggle('ham-open');
+    const visibility = mobNavOpen.getAttribute('data-visible');
+    hamburger.classList.toggle('is-active')
+    
+    if (visibility === "false") {
+        mobNavOpen.setAttribute('data-visible', true);
+        mobNavOpen.setAttribute('aria-expanded', true);
+    } else {
+        mobNavOpen.setAttribute('data-visible', false);
+        mobNavOpen.setAttribute('aria-expanded', false);
+    }
 });
 
-VirtualSelect.init({ 
-    ele: '#service-multiselect' 
-  });
+mobNavOpen.addEventListener('click', () => {
+    hamburger.classList.toggle('is-active')
+    mobNavOpen.setAttribute('data-visible', false);
+    mobNavOpen.setAttribute('aria-expanded', false);
+});
