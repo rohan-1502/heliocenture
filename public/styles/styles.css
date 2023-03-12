@@ -130,7 +130,7 @@ a {
 }
 
 .contact {
-    background-image: url(../assets/contact-bg.png);
+    background-image: url(../assets/contact-bg.webp);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -358,7 +358,7 @@ a {
 }
 
 #cta {
-    background-image: url(../assets/cta-bg.png);
+    background-image: url(../assets/cta-bg.webp);
     background-size: cover;
     min-height: 30vh;
 }
@@ -578,7 +578,7 @@ div.question {
 }
 
 #cta2 {
-    background-image: url(../assets/cta2-bg.png);
+    background-image: url(../assets/cta2-bg.webp);
     background-position: center;
     background-size: cover;
     font-weight: 400;
