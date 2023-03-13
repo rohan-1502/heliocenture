@@ -743,7 +743,7 @@ div.ham-open ul{
 }
 
 .list-item p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .content-home-header p {
@@ -754,8 +754,12 @@ div.ham-open ul{
     font-size: 1.7rem;
     line-height: 2rem;
 }
+    
+ .contact h3 {
+    font-size: 0.8rem;
+}
 
-.contact h3,h1 {
+.contact h1 {
     font-size: 1rem;
 }
 
