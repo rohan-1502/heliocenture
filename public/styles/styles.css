@@ -93,6 +93,7 @@ a {
     right: 15px;
     width: 4rem;
     aspect-ratio: 1/1;
+    z-index: 10000;
 }
 
 .wa-chat a {
@@ -741,6 +742,19 @@ div.ham-open ul{
     text-align: left;
 }
 
+.list-item p {
+    font-size: 0.8rem;
+}
+
+.content-home-header p {
+    font-size: 0.8rem;
+}
+
+.content-home-header h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
 .services-item {
     padding: 2rem 0;
 }
@@ -769,7 +783,11 @@ div.ham-open ul{
 
     #services p {
         font-size: 1rem;
-        margin: 1rem 2rem;
+        margin: 1rem 0.5rem;
+    }
+
+    #services .container {
+        margin: 0;
     }
 
     .services-row-1,
@@ -819,6 +837,7 @@ div.ham-open ul{
     }
 
     .desc-contain {
+        font-size: 1rem;
         margin: 0 1rem;
         min-width: 100%;
     }
@@ -843,6 +862,11 @@ div.ham-open ul{
         margin: 0;
         margin-bottom: 2rem;
         min-width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .cta-btn {
+        padding: 1rem 2rem
     }
 
     .study-row {
@@ -858,6 +882,11 @@ div.ham-open ul{
     .question,
     .answer {
         padding: 0.8rem 1rem;
+    }
+
+    .links {
+        margin: 0 1rem;
+        padding: 0;
     }
 
     .left-links,
