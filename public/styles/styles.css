@@ -747,12 +747,16 @@ div.ham-open ul{
 }
 
 .content-home-header p {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .content-home-header h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 2rem;
+}
+
+.contact h3,h3 {
+    font-size: 1.2rem;
 }
 
 .services-item {
